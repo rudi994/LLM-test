@@ -1,0 +1,688 @@
+
+ONETURE Technologies Case Studies
+
+=== CASE STUDY START ===
+
+1)APIfication for a Leading Clearing & Settlement Corporation in India
+
+###About Client
+In the evolving landscape of capital markets, agility, interoperability, and scalability are becoming non-negotiable for Clearing Corporations. Our client, a prominent Clearing and Settlement organization, is embarking on a digital modernization journey to stay ahead of competition by adopting an API-first architecture. Oneture has partnered with them to deliver a comprehensive API Gateway solution that is enabling secure, scalable, and high-performance API management while accelerating innovation.
+
+###Problem Statement
+As part of its digital transformation, the Clearing Corporation encountered several strategic and technical challenges:
+
+Legacy Integration Complexity
+
+A significant portion of existing APIs were developed in an ad-hoc, undocumented manner.
+Lack of standardization, governance, and security protocols created integration overhead.
+Evolving Business Demands
+
+Internal teams and ecosystem partners required faster onboarding, real-time automation, and seamless data access.
+The need to expose APIs externally without compromising control intensified modernization urgency.
+Heightened Security & Compliance Expectations
+
+Regulatory bodies mandated stronger security, auditability, and standardized data-sharing practices.
+Ensuring secure communication and access control became a non-negotiable priority.
+Performance & Scalability Gaps
+
+Existing infrastructure could not guarantee the scalability and resilience required for high-volume traffic.
+Real-time processing demands exposed architectural bottlenecks in legacy systems.
+Transformation Constraints
+
+While the modernization initiative offered clear benefits, it also presented operational hurdles:
+
+Lack of Institutional Knowledge: Many legacy APIs had no documentation or known ownership, making reverse engineering necessary.
+Domain Dependency: Business logic resided with client-side SMEs, leading to dependencies and delays in technical decision-making.
+Security-First Architecture: Every API and component had to meet stringent security, compliance, and auditability requirements from day one.
+Aggressive Scope: Over 30 APIs to be delivered — including 20+ net-new and 10+ refactored legacy APIs — often without complete technical specifications.
+Oneture's Role
+We are delivering an end-to-end APIfication solution, powered by API Gateway, designed specifically for capital market infrastructure needs — modernizing their infrastructure with an modern-high-performing API Gateway and delivering a robust set of 30+ APIs to enhance digital agility, security, and performance.
+
+Comprehensive API Strategy & Implementation
+
+Full API Lifecycle Management: Designing, developing, deploying, monitoring, and governing APIs with an agile, iterative approach.
+
+Security & Compliance: Implementing robust controls including OAuth2, JWT-based auth, rate limiting, auditing, and detailed API analytics.
+
+Governance & Best Practices: Establishing clear standards for versioning, role-based access, and lifecycle management, ensuring long-term scalability and maintainability.
+
+Seamless Integration of Legacy APIs
+
+API Discovery & Refactoring: Conducted detailed assessment and reverse-engineering of undocumented legacy APIs.
+
+Non-Disruptive Migration: Implemented payload transformations and optimized routing strategies to bring over 10+ legacy APIs into production readiness — without impacting current business flows.
+
+Development of 20+ New APIs
+
+Business-Aligned API Design: Delivered 20+ new APIs supporting business expansion, faster ecosystem onboarding, and improved servicing for clients and intermediaries.
+
+Future-Proof Interfaces: Designed for extensibility, version control, and alignment with evolving regulatory standards.
+
+Agile, Collaborative Execution
+
+Agile + DevOps Mindset: Weekly checkpoints, sprint-based delivery, and real-time feedback loops ensure faster time-to-market.
+
+Design Thinking Workshops: Co-creating API definitions with business stakeholders to ensure usability, accuracy, and alignment with end-user goals.
+
+###Solution
+Oneture is delivering a full-stack, domain-led transformation using a four-track execution model:
+
+Track 1: API Design & Development
+Agile and domain-led design of 20+ new APIs and refactoring of legacy APIs with backward compatibility.
+
+Track 2: Platform Setup & Deployment
+Complete setup and tuning of the API Gateway, including rate limiting, JWT auth, and payload transformations.
+
+Track 3: DevOps & Monitoring
+Implemented CI/CD pipelines, Prometheus-based monitoring, and Grafana dashboards to ensure uptime, performance, and traceability.
+
+Track 4: Governance & Best Practices
+Introduced API governance policies, including versioning, role-based access control, and lifecycle tracking aligned to capital market regulations.
+
+Key Deliverables
+
+Fully operational API Gateway with security and observability configured20+ new APIs developed and deployed.
+
+20+ new APIs developed, tested, and deployed.
+
+10+ legacy APIs reverse-engineered, refactored, and migrated.
+
+CI/CD pipelines, monitoring stack, and payload transformation framework implemented.
+
+Comprehensive Swagger (OpenAPI 3.0) documentation and automated test results delivered.PA for a leading technology based e-broking and wealth management company
+
+###System Architecture:
+
+The diagram illustrates the architecture of the Clearing Corporation (CC) APIfication Account, designed to expose core functionalities through a secure, scalable API-based ecosystem.
+
+Key Components:
+
+1. Member (Client/User)
+The external consumer (e.g., broker, clearing member, Depositories) initiates API requests to interact with CC services.
+
+2. API Gateway
+Acts as the single-entry point for all external API calls. It performs:
+
+Authentication and authorization routing
+Request validation and transformation
+Rate limiting and logging
+Routing requests to the appropriate backend microservice
+3. Auth Microservice
+
+Manages user authentication (e.g., JWT, OAuth2-based, RSA Based signature verification)
+Interfaces with its own MySQL database
+Ensures secure access to downstream services
+4. Microservice 1, 2, N
+
+Each microservice encapsulates a specific business function (e.g., transactions, pledging, margin, etc.)
+Independently deployed and scalable
+Each service has its own dedicated MySQL datastore
+Some services interact with the CC Core System to complete business workflows
+5. CC Core System
+
+The backend enterprise system (e.g., mainframe or legacy application) that holds authoritative data and processes
+Microservices call into this system as needed for processing or data access
+6. Grafana
+
+Connected to the API Gateway and microservices for observability
+Visualizes system health, request metrics, and performance dashboards
+Benefits of this Architecture:
+
+Modular: Each business capability is isolated in its own microservice.
+Scalable: Services can scale independently based on load.
+Secure: Centralized auth and rate-limiting ensure robust access control.
+Observable: Monitoring via Grafana enables proactive system management.
+API-First: Enables faster partner onboarding and digital integration.
+Tools & Technologies
+API Gateway: Modern High Performance Gateway
+Development Stack: Go, Node.js, Python (as per API needs)
+Monitoring: Grafana, Prometheus
+Testing: Postman, JMeter
+Outcome (To Be Delivered)
+30+ APIs: 20+ new APIs being designed and developed, 10+ legacy APIs being migrated and optimized.
+
+Secure Gateway: Full implementation of API Gateway with security and observability being built.
+
+Faster Time-to-Market: Agile execution with iterative development, regular checkpoints, and client co-creation.
+
+Foundation for Innovation: A scalable, modern API infrastructure enabling rapid innovation, new integrations, and business models.
+
+With this modern API architecture, the Clearing Corporation will be well-positioned to:
+
+Rapidly onboard new partners
+Offer differentiated digital clearing services
+Ensure security, compliance, and performance at scale
+Lay a strong foundation for future innovation
+
+=== CASE STUDY END ===
+
+=== CASE STUDY START ===
+Title
+2)Core Trading System Benchmarking Simulation Platform for Capacity Planning for a Stock Exchange
+
+###About Client
+A leading stock exchange responsible for managing billions in daily equity and derivatives transactions. The client operates in an extremely high-frequency trading environment where system performance, scalability, and stability are mission-critical — especially during peak trading windows.
+
+###Problem Statement
+With increasing trading volumes and heightened volatility driven by algorithmic trading, the client needed a robust solution to:
+
+Accurately simulate and replay real-world trading loads.
+Perform capacity planning and identify potential bottlenecks in the trading infrastructure.
+Stress test their trading system components - from order management to network throughput.
+Analyze scalability and latency across end-to-end trade flows.
+Legacy benchmarking tools were insufficient to simulate realistic high-load scenarios or to provide fine-grained analysis of system behaviour under stress. Legacy systems were not equipped to handle modern market dynamics - especially the bursty nature of algo-driven trading and the concurrent flow of equity and derivatives orders.
+
+Additional challenges included:
+
+Receiving and processing hundreds of thousands of trade messages per second over raw TCP.
+Ensuring real-time visualization and rule-based alerting for the client team.
+Enforcing strict network isolation with zero reliance on public cloud or internet connectivity.
+###Oneture's Role
+Oneture partnered with the client to design and build a Custom Benchmarking Simulation Platform — combining our expertise in Capital Markets, high-performance computing, and real-time systems.
+
+Oneture designed and deployed a fully air-gapped Kubernetes cluster optimized for concurrent, low-latency trade ingestion and multi-asset class (Equity + Derivatives) support. We built all services in Golang for performance and deployed a scalable, pod-based TCP ingestion system inside the cluster. 
+
+Key features of our engagement included:
+
+Co-designing the platform architecture in close collaboration with the client’s technology and infrastructure teams.
+Building a future-proof platform that allows the client full code ownership under a Build-Operate-Transfer (BOT) model.
+Leveraging cloud-native capabilities for faster time-to-market while validating hardware feasibility for eventual production deployment.
+Developing both load generation and time-warped historical order replay capabilities to simulate real-world trading peaks.
+
+###Solution
+Time-Warping of Historical Order Data
+
+Collected historical trade order data and applied "time-warping" algorithms to compress or expand timestamps.
+Enabled realistic simulation of trading days under various volatility conditions.
+Supported as-is, time-compressed (to stress test system limits), and time-expanded (to simulate prolonged high-load conditions) modes.
+Maintained data integrity while handling edge cases like zero time deltas.
+Massive Load Generation
+
+Successfully simulated loads of up to XXX million order entries per second.
+Developed custom code to generate controlled, incremental load scenarios, enabling soak testing and stepwise capacity testing.
+Conducted detailed network throughput feasibility analysis:
+Validated machine configurations (e.g. 15–20 Gbps network capacity) to achieve target loads.
+Optimized packet sizes and TCP configuration for maximal throughput.
+Cloud-Native Architecture
+
+Built a base version on cloud infrastructure for rapid prototyping and validation.
+Designed the platform to integrate with client’s on-premise systems for production deployments.
+Ensured full compliance with client’s data security, confidentiality, and regulatory requirements.
+Granular Observability
+
+Incorporated real-time metrics, dashboards, and logs using Prometheus, Grafana, and Loki.
+Provided full visibility into system performance, transaction latencies, and pod-level resource utilization.
+Enabled historical playback and forensic analysis of any test run.
+
+
+The architecture centers around a highly available Kubernetes cluster (RKE2) running on RHEL 9, with one control-plane node and 10 worker nodes. Key technical components:
+
+a. Golang-based TCP Ingestion System
+
+Developed a fleet of TCP client pods using Golang’s net package and goroutines to handle 1000s concurrent TCP connections.
+Each pod runs an event-driven listener for trade orders from external Processing Engines over Layer 4.
+Used Goroutine pools, channel buffering, and context-based cancellation for fault-tolerant message processing.
+Orders are classified in real time into Equity and Derivatives, parsed, and pushed to Order Processing Engine.
+b. Kubernetes-Native Pod Scaling
+
+Deployed TCP clients as Stateful Sets for sticky sessions and horizontal scalability.
+Configured custom resource limits and affinity rules to isolate workloads by trading segment.
+Used native Kubernetes autoscaling (HPA + custom metrics) to spin up new client pods during trading peaks.
+The cluster enabled segregation of traffic flows per trader ID, preventing noisy-neighbor problems during high volatility.
+c. Real-Time Monitoring and Visualization
+
+Prometheus scrapes pod-level metrics and node-level resource usage metrics.
+Grafana dashboards give the client team immediate visibility into order volumes, message latency, and pod saturation.
+Loki aggregates structured logs for every incoming connection and parsed order — useful for historical playback and debugging.
+
+
+###Value Delivered
+Enabled client to simulate high-stress scenarios and validate system stability before production rollout.
+
+Helped identify performance bottlenecks early — allowing targeted infrastructure upgrades.
+
+Reduced business risk during volatile trading days by ensuring system resilience.
+
+Provided a reusable platform for ongoing capacity planning and future scalability studies.
+
+Delivered full knowledge transfer and platform ownership to the client under BOT model.
+
+Achieved sub-millisecond trade ingestion latency even at peak XXX orders/sec
+
+Seamless horizontal scaling of TCP pods eliminated throughput bottlenecks
+
+Provided full observability into market flows without external tools or SaaS dependencies
+
+Enabled client teams to correlate Equity and Derivative order behaviour in near real-time — essential for regulatory alerts and market integrity
+
+Enabled full visibility into TCP streams and real-time alerting via Grafana.
+
+###Technologies Used
+Kubernetes (RKE2)
+Golang
+TCP
+Prometheus
+Grafana
+Loki
+Angular
+Redis
+Lessons Learned
+Golang’s raw socket capabilities and efficient memory handling made it ideal for building low-latency TCP clients.
+
+Kubernetes' native autoscaling and self-healing features were critical for supporting highly volatile trading volumes.
+
+Observability (often overlooked) proved essential for gaining trust from client IT teams and for audit compliance.
+
+Custom Kubernetes controllers (built using controller-runtime) gave us flexibility to manage pod lifecycle based on trading hours and trader load patterns.
+
+TCP in Kubernetes is viable at scale—but it requires careful tuning of pod networking, socket reuse, and client-server handshake design.
+
+Time-Warping Provides Realistic Scenarios: Simple replay of historical data is not enough — time-warping techniques were essential to simulate extreme volatility and stress conditions.
+
+Scaling TCP at High Concurrency Needs Deep Tuning: Achieving stable XXX million orders per second load required careful design of TCP socket handling, buffer management, and connection pooling.
+
+Network Throughput Is a Key Constraint: Many assumed system limits came from CPU or storage, but network bandwidth was often the first saturation point; precise throughput modelling and testing were necessary.
+
+Observability Drives Confidence: Building in full telemetry — including metrics, logs, and visual dashboards — not only accelerated debugging but also helped client stakeholders build trust in the platform.
+
+Cloud as a Proving Ground: Using cloud infrastructure for early-stage feasibility allowed faster iteration without disrupting production environments while still validating hardware sizing for on-premise rollout.
+
+BOT Model Ensures Long-Term Client Ownership: Structuring the engagement with Build-Operate-Transfer allowed for full client ownership and IP transfer, ensuring sustainability beyond initial delivery.
+=== CASE STUDY END ===
+
+=== CASE STUDY START ===
+###Title
+3)RPA for a leading technology-based e-broking and wealth management company
+
+###About Client
+Client is leading stock broking company providing services like stock broking, financial products distribution, wealth management, and investment banking. They are serving customers ranging from the retail & institutional investors, corporates and High Net-worth Individuals (HNIs)
+
+###Problem Statement
+Our client was struggling with three major challenges a) their initial RPA automation effort made them feel stuck with little to no ROI b) ever increasing pressures on fee structures due to steep competitions from discount brokers limiting any further headcount growth c) exponential growth in number of new accounts and volume of transactions putting tremendous pressure on operations team
+
+Client’s objective was to focus on simplification and to overcome these challenges by automating middle and back operations at speed
+
+Approach :
+
+Our initial assessment of the process landscape and tech-check suggested multiple process areas wherein value can be derived from Robotics Process Automation.
+
+The following activities and task has been defined and we started applying this framework for every automation use case, ultimate goal is to move towards building Centre of Excellence for Automation.
+
+
+
+###Oneture's Role
+As an RPA trusted partner, Oneture is responsible for jointly identifying, assessing and implementing RPA use-cases in the broader context of digital transformation. Here is a specific use cases as an example
+
+Use case 1:
+
+ABC tracking and margin monitoring process is done manually by a user from 9 AM to 5 PM for equity, FNO and CDX segments. User has to keep on monitoring values that are getting updated on a real time basis on a web portal to calculate the margin utilization in cash, FNO, CDX, debt, OFS, SLBM segments.
+
+Solution:
+
+A solution was suggested after the process walkthrough through RPA automation anywhere tool. As per the initial assessment, the process was found 100% feasible for automation. In the solution, bot will continue to run into a loop from 9 AM to 5 PM to check the portal values. The notification activity is given into the solution where a user will get an email when the margin utilization crosses 60% or fluctuates between 60 to 100% in a particular segment.
+
+Use case 2:
+
+EOD & Intraday files alerts and download is the process of risk operations which is done by a user to fetch the files provided by exchange on the member portal or on the website. The requirement was to send email alerts when these files are available on the portal and download the same to the client server.
+
+Solution:
+
+As per the process walkthrough, the process has been identified as feasible for automation. RPA (Automation anywhere) tool is so flexible with the web portals on the basis of UI or backend. The AA tool will be interacting with various web portals to identify the file and download the same. Bot will run in the frequency of every one hour to look for EOD & intraday files on exchange portals, once the file is identified then bot will download the same. Automation anywhere tool provides a functionality to send/read emails through an email server and using the same bot sends an email trigger to the user upon finding the files.
+
+###Value Delivered
+The developed automations have streamlined these processes so that it no longer requires employee labor. The RPA solutions helped the client meet all processing SLAs with significant accuracy as well as huge cost, FTE benefit and time savings; with negligible human intervention thereby reducing human errors and improving overall performance of the company.
+
+Given the success of first two use cases, client approved additional budget and identified an RPA Ambassador to help socialize automation and its benefits internally. This helping changes the company’s cultural mindset to automation first, wherever possible. The team now receives automation submission ideas from senior leaders through to SMEs who own the processes.
+
+Approximately 20 automation use cases — some simple, some complex — are identified  for the next 6 month
+
+=== CASE STUDY END ===
+=== CASE STUDY START ===
+
+###Title
+4)Customer 360 for Indian Private Sector bank
+###About Client
+One of the largest private sector banks in India with over 8 million customers.
+
+###Problem Statement
+It is more important than ever for a bank to maintain a relationship with its current and potential customers. Hence it becomes important for the bank to obtain a comprehensive view of customers by leveraging data from various touchpoints in a customer’s journey.
+
+Banks need to establish customer-facing teams and start tracking structured and unstructured data for capturing, analyzing, and responding to the generated insights.
+
+Relationship managers need such a Customer 360 platform to track their portfolio, account balance trends, find every transactional activity of their customer’s account in a few clicks and update data about recent conversations, etc. in order to maintain a good relationship with the customer.
+
+By collecting various pieces of the customer journey, a business can start to get a clearer picture of how customers may act and relationship managers can take action accordingly.
+
+###Oneture's Role
+Oneture being a select consulting partner of the bank, saw a huge opportunity in the relationship management dashboard space and proposed the bank with a complete solution for the use case.
+
+By getting complete requirements from the upper management and actual users – the relationship managers, we framed the scope of this Customer 360 platform and proposed a solution that would solve the problem statement of the bank in the most efficient way.
+
+We solved the most challenging technical problems of building the platform, which included super fast data processing and developing a highly optimised web application for graphical visualization and tabulated data retrieval in the minimum possible time.
+
+We also participated in the architectural decisions, the UI/UX design, the infrastructure setup and the deployment of the application over the bank’s private cloud too.
+
+###Solution
+Ensuring complete security of the application
+
+We developed multiple layers of security in this application, starting with the code itself. No API returns a response to any request, if not called with a valid authentication token.
+The authentication token gets generated by the application after successful login, validated by the bank’s LDAP system. The returned token needs to be passed as the header for every API call to work.
+We also handled a variety of edge cases in the frontend to ensure that the user is logged in with a valid session to receive any information from the backend, making the application fully secure.
+Having latest data available to the platform for a real-time experience
+
+The bank has a centralized data warehouse containing each and every captured data point, populated on a daily basis. We use this warehouse for populating our application’s database tables.
+With the help of special queries and ETL mechanisms, the platform’s information is updated at a certain time everyday from the central warehouse itself, ensuring availability of T minus 1 dated data at any given day.
+The data retrieval at real time includes all the latest information, including account transactions, trends and metadata or personal information for any customer.
+Displaying interactive charts with useful information
+
+The charts used for data visualization of balances, trends, behaviour and other metrics needed to be highly usable for every audience.
+Showing bar charts, lines, etc. based on the database records was a challenge that Oneture solved with bank by using a standard chart library and integrating all the required features into it.
+The data rows received from the database get modified in the frontend to a format which can be understood by the chart library to ensure proper visualization along with colors, plot lines and multi-line etc. features available to the platform.
+
+###Architecture
+
+The Node Server is used as a Web Server that also acts as a proxy to the backend Django server. Node server forwards all the REST API requests received over port 443 from the Angular UI to the Django server and back to UI.
+The backend runs over Django server for Django REST framework to handle API calls and connect with other services like the on-premises LDAP authentication and Redis cache management.
+The Redis cache is an in-memory database, responsible for storing recently fetched results for queries fired on the database, so that repeated API requests can return results much faster, without putting load on the actual master database every time. It follows the typical cache hit or miss algorithm developed in Python.
+We also store session information under an encrypted JWT authentication token after a successful login in the redis cache, to authorize subsequent requests from the user. Logging of the platform and user interaction happens at the API level, inside the Django services for each API call.
+The PostgreSQL Database is hosted on a managed RDS Service. It contains the database and tables for the entire platform. All the API queries are fired on this platform. The RDS can also have a read replica in order to distribute the read-queries load on the platform. AWS supports multiple read-replicas to be created on the platform.
+Value Delivered
+The relationship managers now have the ability to quickly access any piece of customer and account information within a couple of clicks.
+
+With the help of this platform, real time processing of data of 8 million customers for visualizing trends and getting actionable steps became possible, which could have earlier taken multiple tools to achieve and wasted a lot of time.
+
+With the help of this platform, the business could get deep and granular insights into customer preferences and behaviors, which the bank can use to interact with customers and deliver the services and experiences consumers expect.
+
+###Technologies
+Technology domain	Tools
+Front End	HTML, CSS, JavaScript, Angular and NodeJS
+Back End	Python, Django with REST API, Redis
+Database	PostgreSQL
+Cloud	AWS EC2 and RDS
+###Lessons Learned
+Always consider scalability while building high priority cloud applications
+
+As the business starts using the platform more, scaling up of the cloud resources becomes essential. This is one of the key benefits of using cloud based infrastructure and AWS provides a range of services for auto-scaling and minimal human interaction in managing varying load on the cloud based services.
+
+Build for modularity and compatibility
+
+There are new features being added to the Customer 360 on a monthly basis. Hence building the application as a collection of modules becomes very important. Also, the API’s can be used for data retrieval by another application too.
+
+Think of security and privacy from the start
+
+Our application is developed keeping data security and user privacy in mind from the start, hence it is completely compliant with all the security policies of the bank.
+
+Capture user behavior for analytics
+
+It is important to ensure proper API logging and UI interaction logging to analyze and understand the key metrics of the running platform. Integration with services like Google Analytics provides a powerful way to capture events like page visits, button clicks, etc. to find out information about the most used features of the platform.
+=== CASE STUDY END ===
+
+=== CASE STUDY START ===
+###Title
+5)Comprehensive SWIFT MT to MX Migration & Back-Office Platform Modernization for a Leading Financial Institution – A Collaborative Approach
+
+###About Client
+Our client, a leading global financial services institution, faced a major regulatory and technological shift driven by SWIFT’s mandatory migration from legacy MT message formats to the ISO 20022-based MX message standard. With the compliance deadline fast approaching (November 2025), the client needed to execute a full-scale transformation of their financial messaging infrastructure while ensuring operational continuity, compliance, and risk mitigation throughout the transition.
+
+###Problem Statement
+The transition from MT to MX impacted multiple layers of the client's operations, with far-reaching implications across technology, operations, regulatory compliance, and customer servicing:
+
+Modernizing Legacy Systems: The client's back-office system was a custom-developed JAVA application with 25 business-critical screens and 49 tightly coupled database objects. This system was not designed to handle MX's highly structured and data-rich format. The entire system was rewritten using modern technologies like React (Typescript) and .NET Core so as to avoid any technological constraints.
+
+Dual Compatibility During Transition: During the coexistence period, the client needed to process both MT and MX formats simultaneously while ensuring seamless compatibility with counterparties still using MT.
+
+Data Quality & Enrichment: ISO 20022 MX introduces a much richer data structure, necessitating significant improvements in data validation, enrichment, and error-handling processes.
+
+Operational Workflow Redesign: The more detailed MX message structures required significant adjustments in internal workflows for processing, reconciliation, corporate actions, and exception handling.
+
+Data Migration strategy: Since the existing application was already used by the client. It was necessary to devise a complex data migration strategy to avoid any data loss during transition.
+
+Integration Complexity: Ensuring seamless integration with SWIFT’s Alliance Cloud and adopting SWIFT Messaging API 2.0 posed additional technical challenges. Adopting to Alliance cloud and Swift messaging API was necessary to avoid any future migrations (As SWIFT is planning to depreciate both Alliance Lite and Swift SIL in near future).
+
+Testing & Interoperability: Rigorous system testing, including functional, integration, and end-to-end interoperability testing, was critical to ensure a stable production roll-out.
+
+Aggressive Timelines: With limited time before the regulatory deadline, a comprehensive but time-sensitive execution plan was critical.
+
+###Oneture's Role
+Client and Oneture formed an integrated delivery team to jointly design and execute a phased transformation program:
+
+1. Strategic Assessment & Planning
+
+Conducted a detailed assessment of the client's existing systems, interfaces, workflows, and message formats.
+
+Identified the impacted business functions and downstream dependencies.
+
+Developed a comprehensive migration blueprint balancing regulatory timelines, operational risks, and business priorities.
+
+2. Platform Modernization & Application Rewrite
+
+Fully rewrote the client's existing JAVA (.NET)-based back-office system, modernizing 25 core business screens including:
+
+Search
+Trades
+Transfers
+Foreign Exchange
+Approval/Cancellation
+Securities & Fund Ledgers
+Approvals & Revisions
+Corporate Actions
+Custodian & Settlement Fees
+Notifications & Deposits
+Member and Account Master Data
+Redesigned 49 underlying database objects to accommodate ISO 20022's expanded data fields and validation rules.
+
+Refaced the UI entirely as per modern standards to improve user experience and operativity.
+
+3. MT to MX Message Translation Layer
+
+Built configurable translation engines to handle bidirectional conversion between MT and MX formats.
+
+Developed, tested, and validated multiple message types in sandbox environments to ensure accurate translation logic.
+
+Enabled message coexistence for both formats to ensure operational continuity during the transition window.
+
+4. SWIFT Messaging API 2.0 Integration
+
+Integrated SWIFT Messaging API 2.0 (via MV-SIPN based connectivity) for Alliance Cloud to ensure direct connectivity, security, and real-time message handling capability.
+
+Implemented necessary middleware and API orchestration layers to handle message flow seamlessly between the client’s internal systems and SWIFT’s cloud infrastructure.
+
+5. Testing & Certification
+
+Conducted comprehensive functional, integration, performance, and end-to-end testing cycles.
+
+Carried out interoperability tests with SWIFT and multiple external counterparties.
+
+Prepared and supported the client through certification and readiness validation exercises.
+
+6. Risk Mitigation & Governance
+
+Identified key project risks upfront, including integration failures, data mismatches, regulatory non-compliance, and operational disruptions.
+
+Defined and executed detailed contingency and fallback procedures to mitigate downtime or disruptions.
+
+Conducted continuous alignment sessions with business, operations, compliance, and IT teams to ensure coordinated execution.
+
+###Solution
+To ensure robust, compliant, and scalable MT to MX migration, Client-Oneture adopted an architecture approach aligned with SWIFT’s recommended patterns for Messaging API 2.0 and Alliance Cloud integration. The architecture provides a clear, step-by-step framework that enables seamless message processing while addressing both current and future business needs.
+
+###Value Delivered
+Future-ready back-office platform fully compliant with ISO 20022 standards.
+
+Seamless MT/MX coexistence capability during the transition phase.
+
+Significantly improved data validation, reconciliation, and operational efficiency.
+
+Full integration with SWIFT Alliance Cloud via Messaging API 2.0.
+
+Successful completion within targeted timelines, minimizing operational disruption and de-risking the regulatory deadline.
+=== CASE STUDY END ===
+
+=== CASE STUDY START ===
+###Title
+6)Building a Digital Onboarding Platform for Foreign Investors (FPI & FVCI) — End-to-End Digital Transformation
+
+###About Client
+One of India’s leading Depository / capital market infrastructure institutions is responsible for maintaining investor records, managing investor registrations, compliance, and regulatory filings and enabling seamless settlement of securities. The client is playing a pivotal role in streamlining cross-border investments into India by overseeing - investor onboarding, regulatory reporting, custodial operations, Foreign Portfolio Investors (FPIs), Foreign Venture Capital Investors (FVCIs), and related participants.
+
+###Problem Statement
+Legacy Onboarding Systems:
+
+The client's existing investor onboarding platforms are facing several operational, technological, and compliance challenges:
+
+Manual, fragmented processes across FPI and FVCI onboarding workflows.
+Complex regulatory filings involving multiple entities: DDPs (Designated Depository Participants), Custodians, SEBI, Depositories, Banks, and the Income Tax Department.
+Lack of a unified interface leading to operational inefficiencies.
+Increased cost of compliance and client dissatisfaction due to delays and fragmented user experience.
+High dependency on manual intervention, leading to processing delays, potential errors, and audit issues.
+Expanding Regulatory Scope:
+
+In addition to existing FPI processes, the regulator has introduced the need for streamlined onboarding for Foreign Venture Capital Investors (FVCIs) — with similar but not identical regulatory requirements.
+
+The client is needing a scalable, integrated solution that can:
+
+Simplify and standardize onboarding for both FPI and FVCI investor classes.
+Seamlessly integrate with regulatory systems and external stakeholders.
+Provide flexible workflows to accommodate evolving regulations.
+Improve auditability, system resilience, and user experience.
+Fragmented Workflows: The FPI and FVCI processes operated in silos with separate data flows, stakeholder interactions, and approval chains. This led to duplication of effort, increased processing time, and higher operational overhead.
+
+Manual FVCI Registration: The absence of a digital workflow for FVCI required applicants to submit physical forms and documents. The review and approval process involved back-and-forth email communication, resulting in delays, document loss, and compliance risks.
+
+Lack of Real-Time Tracking & Self-Service: Users could not track application statuses on their own and had to rely on email or calls to customer support. This dependency led to poor user experience and increased burden on helpdesk teams.
+
+Limited Compliance Enforcement: Without a centralized system capturing audit trails, approval timestamps, and role-based actions, it was difficult to monitor compliance or demonstrate adherence to regulatory protocols in a transparent and scalable manner.
+
+###Oneture's Role
+Oneture is selected as the strategic technology partner based on:
+
+Deep capital markets and regulatory domain expertise.
+Prior successful delivery of complex financial onboarding solutions.
+Proven capabilities in scalable enterprise-grade digital platforms.
+We are proposing and executing a phased approach that balances regulatory compliance, time-to-market urgency, and long-term scalability.
+
+###Solution
+
+
+The unified investor portal is built on a modern microservices-based architecture, enabling scalability, modular deployment, and robust security. The architecture is designed with clear separation of concerns across layers:
+
+Presentation Layer: A responsive Angular single-page application (SPA) serves as the primary user interface. It is designed with modular feature separation, role-based dynamic routing, and lazy loading for performance optimization.
+
+Middleware (BFF): A .NET 8-based Backend-for-Frontend (BFF) layer aggregates and customizes API responses for frontend consumption. This layer helps streamline client-server interactions, manage authentication tokens, and implement request shaping.
+
+Microservices Layer: Core business functions (Application Management, Document Upload, Digital Signing, and Workflow Processing) are split into independently deployable services. Each service communicates via REST APIs and is containerized using Docker.
+
+Database Layer: A centralized SQL Server stores structured data including user profiles, application records, workflow status, and audit logs. Binary file storage for uploaded documents is managed securely within the application infrastructure.
+
+Authentication & Authorization: The system uses JWT-based token authentication with fine-grained Role-Based Access Control (RBAC) to manage permissions across modules.
+
+DevOps & CI/CD: GitLab CI/CD pipelines automate build, test, and deployment stages. NGINX acts as a reverse proxy, routing traffic to the appropriate services, with support for SSL termination and HTTP/2.
+
+API-First Architecture: We are ensuring seamless integration with,
+
+Custodians and Depositories.
+PAN issuance via Income Tax Department APIs.
+SEBI and other regulatory compliance systems.
+The system is being designed to easily support future integrations and ecosystem participants.
+
+Approach to Unified Digital Onboarding Platform (FPI + FVCI)
+
+We are developing a unified web platform that handles the entire lifecycle of investor onboarding — from registration to renewals, modifications, surrender, and data updates.
+
+We are delivering a seamless multi-stakeholder workflow across:
+
+Foreign Investors
+DDPs (Designated Depository Participants)
+Custodians
+Regulators (SEBI)
+Income Tax Department (ITD)
+Depositories
+Banks
+Phase-wise Delivery Approach
+
+Phase 1: FPI Common Application Form (CAF) Platform
+
+We are performing end-to-end redevelopment of CAF system for FPIs.
+
+We are building full digital processing of:
+
+Investor KYC, Depository & Bank details, PAN validation, Annexures, Document Upload.
+Maker-Checker approval flow for DDPs.
+Real-time integration with PAN allotment APIs at Income Tax Department.
+Role-based access control for participants.
+Email/SMS notifications.
+Transaction upload modules.
+Comprehensive reporting framework.
+Phase 2: FVCI Onboarding Platform Extension
+
+We are extending platform capabilities to handle FVCI onboarding workflows.
+
+We are creating separate FVCI-specific forms and workflows aligned to SEBI guidelines.
+
+Simplified landing pages for FPI/FVCI selection.
+Role-based user authorization.
+Document uploads, declarations, KYC, annexures.
+Parallel development to meet aggressive regulatory timelines.
+Implementation Timeline
+
+Estimated Execution Window: 19–30 weeks (approximately 5–7 months)
+Timeline Factors: Timelines were customized based on the client's readiness, infrastructure complexity, and resource availability.
+Value Delivered
+Enhanced Operational Efficiency: By End-to-End Digitalization of Investor Onboarding consolidating workflows and eliminating manual processes, the portal significantly reduces turnaround times for both FPI and FVCI onboarding.
+
+Improved Stakeholder Collaboration: The maker-checker approval flow and role-based dashboards streamline coordination between applicants, custodians, and approvers.
+
+Real-Time Visibility: Status tracking, dashboards, and acknowledgment receipts provide transparency for all stakeholders.
+
+Regulatory Compliance: The system enforces audit trails, access controls, and DSC-based approvals, ensuring adherence to regulatory mandates.
+
+User Experience Improvements: A guided, responsive interface with validation and autosave enhances usability and reduces user drop-off and Improved user experience for DDPs, Custodians, and Investors
+
+Cost Savings: Automation and reduced support overhead contribute to long-term operational savings. Flexible architecture is allowing rapid extension for FVCI onboarding without major rework. Unified platform is minimizing future maintenance efforts through reusable components.
+
+Flexible architecture is allowing rapid extension for FVCI onboarding without major rework.
+
+###Technologies
+Frontend: Angular 14+ (Material Design Components, PWA Support)
+Backend: .NET Core (for FPI) / Python Django (for possible backend scaling in future)
+Database: SQL Server
+Integration: RESTful APIs
+Deployment: Fully On-Prem
+Hosting Model: Hybrid (initially on cloud for rapid POC, then fully migrated to on-prem as per client’s security policies)
+Lessons Learned
+Modular Platform Architecture Enables Rapid Regulatory Extensions:
+The reusable design of components is allowing us to extend FPI platform features quickly for FVCI onboarding.
+
+Strong Stakeholder Alignment is Critical for Success:
+Continuous engagement with multiple parties (SEBI, ITD, Custodians, DDPs) is proving crucial to avoid rework and ensure regulatory alignment.
+
+Integration Testing Must Account for Multiple Ecosystem Dependencies:
+Early identification of integration dependencies (PAN APIs, Depository Services) is helping avoid downstream delays.
+
+Hybrid Engagement Model Helps Manage Complexity:
+A combination of Fixed Scope-Fixed Fee (for core modules) and T&M (for evolving modules) is providing flexibility as regulatory clarifications emerge.
+
+Cloud as Sandbox Accelerated Early Development:
+Using cloud environments for initial prototyping is helping reduce time-to-market while securing final deployments to client’s on-prem infrastructure.
+
+###Why Oneture?
+End-to-End Solution: Our platform covers the entire lifecycle of FPI registrations, modifications, renewals, and surrenders, ensuring a seamless experience for both applicants and DDPs.
+
+User-Centric Design: We emphasize intuitive, guided user journeys with responsive forms and contextual help to enhance usability.
+
+Robust Review and Approval Workflow: Multi-level review mechanisms for DDPs, with automated alerts and audit trails, align the platform with regulatory compliance needs.
+
+API Integration Prowess: Oneture's experience in integrating with DDPs, Custodians, SEBI, and ITD ensures smooth real-time exchanges for PAN verification, authorization, and status updates.
+
+Security and Compliance: Enterprise-grade authentication, encrypted APIs, and DSC integration ensure data security and regulatory alignment.
+
+Customizable and Scalable: The system’s architecture supports custom configurations and seamless scaling as user volumes grow.
+
+Proven Expertise: We’ve successfully delivered similar financial and regulatory solutions, demonstrating deep domain knowledge and delivery capability.
+
+Client-Centric Approach: Our methodology prioritizes stakeholder collaboration and tailoring the product to meet evolving business goals.
+
+Innovative Technology Stack: Leveraging modern frameworks (Angular, .NET 8, Docker, REST APIs), we build reliable, cutting-edge solutions that are ready for the future.
+
+This unified portal for FPI and FVCI onboarding demonstrates the power of a modular digital platform to transform legacy financial operations. It enhances compliance, efficiency, and user experience while laying the foundation for broader investor onboarding services in the future. Oneture is delivering not just a platform, but a long-term foundation for seamless investor onboarding, regulatory compliance, and operational agility.
+=== CASE STUDY END ===
